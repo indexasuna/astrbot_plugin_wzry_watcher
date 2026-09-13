@@ -1,0 +1,35 @@
+{
+  "keywords": {
+    "description": "订阅关键词（逗号分隔）",
+    "type": "string",
+    "hint": "例如：更新,公告,活动,福利,新皮肤",
+    "default": "更新,公告,活动,福利,新皮肤,版本"
+  },
+  "channel": {
+    "description": "默认查询频道",
+    "type": "string",
+    "hint": "可选：公告 / 活动 / 热点 / 新闻 / 赛事",
+    "default": "公告"
+  },
+  "fetch_limit": {
+    "description": "每次拉取条数",
+    "type": "int",
+    "default": 20
+  },
+  "push_enabled": {
+    "description": "启用定时推送",
+    "type": "bool",
+    "hint": "开启后按下方间隔自动检查新公告并推送到订阅群",
+    "default": false
+  },
+  "push_interval_minutes": {
+    "description": "推送检查间隔（分钟）",
+    "type": "int",
+    "default": 60
+  },
+  "push_groups": {
+    "description": "推送目标群号列表（留空则不推送）",
+    "type": "list",
+    "default": []
+  }
+}
